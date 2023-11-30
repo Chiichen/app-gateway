@@ -10,7 +10,6 @@ jobs:
         run: |
           sudo apt install protobuf-compiler 
           go install github.com/golang/protobuf/protoc-gen-go@latest
-          sudo cp -r $GOPATH/bin/protoc-gen-go /usr/bin
       - name: build-proto
         run: make proto
   go-test:
